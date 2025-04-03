@@ -3,10 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>My Music Player</title>
+    <link rel="stylesheet" href="style.css">  <!-- Linking CSS -->
+    <script src="https://unpkg.com/wavesurfer.js"></script> <!-- Audio Library -->
 </head>
 <body>
-    <h1>Hello</h1>
+
+    <h1>🎶 My Music Player 🎶</h1>
+    <h2 id="songTitle">Now Playing: Loading...</h2>
+
+    <div class="player-container">
+        <h2>Now Playing: My Song</h2>
+        <div id="waveform"></div>  <!-- Audio Waveform -->
+        <button id="playPause">▶ Play</button>
+    </div>
+
+    <script src="script.js"></script>  <!-- Linking JS -->
 </body>
 </html>
