@@ -3,72 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Music Player</title>
-    <script src="https://unpkg.com/wavesurfer.js"></script>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #121212;
-            color: white;
-        }
-        .player-container {
-            max-width: 400px;
-            margin: 50px auto;
-            background: #1e1e1e;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
-        }
-        button {
-            background-color: #ff6600;
-            border: none;
-            color: white;
-            padding: 10px 20px;
-            margin: 10px;
-            font-size: 16px;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-        button:hover {
-            background-color: #ff4500;
-        }
-    </style>
+    <title>Document</title>
 </head>
 <body>
-
-    <h1>🎶 My Music Player 🎶</h1>
-    <div class="player-container">
-        <h2>Now Playing: My Song</h2>
-        <div id="waveform"></div>
-        <button id="playPause">▶ Play</button>
-    </div>
-
-    <script>
-        // Initialize WaveSurfer
-        const wavesurfer = WaveSurfer.create({
-            container: '#waveform',
-            waveColor: 'gray',
-            progressColor: '#ff6600',
-            barWidth: 3,
-            responsive: true,
-            height: 80,
-        });
-
-        // Load song (Replace with your actual direct MP3 link)
-        wavesurfer.load("https://drive.google.com/file/d/1SrM1llPHb0I56wN1O7IgthJT8SZr5TYD/view?usp=sharing");
-
-        // Play/Pause Button
-        document.getElementById("playPause").addEventListener("click", function () {
-            if (wavesurfer.isPlaying()) {
-                wavesurfer.pause();
-                this.innerHTML = "▶ Play";
-            } else {
-                wavesurfer.play();
-                this.innerHTML = "⏸ Pause";
-            }
-        });
-    </script>
-
+    <h1>Hello</h1>
 </body>
 </html>
